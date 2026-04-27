@@ -10,6 +10,35 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* === Custom overrides ===
+			   These rules tweak the template's default styling.
+			   They live here in index.html so you don't have to edit main.css. */
+
+			/* 1. Make the profile photo (avatar) bigger.
+			      Both numbers must match to keep the image circular.
+			      Template default is 125px. */
+			#header .inner .image.avatar {
+				width: 200px;
+				height: 200px;
+			}
+
+			/* 2. Make the header tagline text less transparent.
+			      Values close to 1 are more opaque; the template default is around 0.5. */
+			#header .inner h1,
+			#header .inner h1 strong {
+				color: rgba(255, 255, 255, 0.9);
+			}
+
+			/* 3. Make the footer social icons and copyright text less transparent. */
+			#footer .inner .icons li a {
+				color: rgba(255, 255, 255, 0.9);
+			}
+			#footer .inner .copyright,
+			#footer .inner .copyright a {
+				color: rgba(255, 255, 255, 0.85);
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -103,7 +132,7 @@
 					<section id="publications">
 						<h2>Publications</h2>
 						<p>A complete list of my publications is available on
-							<a href="https://ui.adsabs.harvard.edu/public-libraries/2Z6wwKBDQKi5kS-FAc0Pww">NASA ADS</a>
+							<a href="https://ui.adsabs.harvard.edu/public-libraries/2Z6wwKBDQKi5kS-FAc0Pww">NASA ADS</a>.</p>
 						<h3>Selected Publications</h3>
 						<ul class="alt">
 							<li>Weaver, K.A., et al. &ldquo;Kpc-scale Neutral Iron K&alpha; Emission in the Starburst-AGN NGC 4945: A Relic AGN Outflow.&rdquo; <em>ApJ</em>, 2025 (accepted).</li>
